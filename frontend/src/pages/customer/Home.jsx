@@ -1,19 +1,17 @@
-import CustomerHero from "../../components/CustomerHero";
+import CustomerHero from "../../components/CustomerHero/CustomerHero";
 import CategorySection from "../../components/CategorySection";
-import FeaturedProducts from "../../components/FeaturedProducts";
-import WhyChooseUs from "../../components/WhyChooseUs";
 import TechnologySection from "../../components/TechnologySection";
-import ServicesSection from "../../components/ServicesSection";
+import Testimonials from "../../components/Testimonials";
+import FeaturedProducts from "../../components/FeaturedProducts";
 
 function Home() {
   return (
     <>
       <CustomerHero />
-      <CategorySection/>
-      <FeaturedProducts/>
-      <WhyChooseUs/>
-      <TechnologySection/>
-      <ServicesSection/>
+      <CategorySection />
+      <TechnologySection />
+      <Testimonials />
+      <FeaturedProducts />
     </>
   );
 }

@@ -1,0 +1,64 @@
+/* Common Container */
+.common-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* Primary Button */
+.btn-primary {
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  font-weight: 700;
+  text-transform: none;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-md);
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background: var(--gradient-hover);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  text-transform: none;
+}
+
+.btn-secondary:hover {
+  background: var(--color-light);
+}
+
+/* Common Section */
+.common-section {
+  width: 100%;
+  padding: 60px 0;
+}
+
+/* Common Text */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .common-container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .common-container {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,223 @@
+/* ==============================
+   CUSTOMER HERO SECTION
+================================ */
+
+.customer-hero {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  min-height: 650px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #071b33;
+}
+
+/* ==============================
+   BACKGROUND VIDEO
+================================ */
+
+.customer-hero__video-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.customer-hero__video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==============================
+   VIDEO OVERLAY
+================================ */
+
+.customer-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 27, 51, 0.95) 0%,
+    rgba(7, 27, 51, 0.75) 45%,
+    rgba(7, 27, 51, 0.2) 100%
+  );
+}
+
+/* ==============================
+   HERO CONTAINER
+================================ */
+
+.customer-hero__container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 100% !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.customer-hero__content {
+  max-width: 720px;
+  padding: 100px 0;
+}
+
+/* ==============================
+   HERO TEXT
+================================ */
+
+.customer-hero__eyebrow {
+  color: #35a7ff !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  margin-bottom: 22px !important;
+}
+
+.customer-hero__title {
+  color: #ffffff !important;
+  font-size: clamp(38px, 5vw, 68px) !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  margin-bottom: 24px !important;
+}
+
+.customer-hero__description {
+  max-width: 600px;
+  color: #e5eaf0 !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  margin-bottom: 32px !important;
+}
+
+/* ==============================
+   HERO BUTTONS
+================================ */
+
+.customer-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.customer-hero__primary-btn {
+  background: #0879c9 !important;
+  color: #ffffff !important;
+  padding: 13px 26px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.customer-hero__primary-btn:hover {
+  background: #35a7ff !important;
+  transform: translateY(-2px);
+}
+
+.customer-hero__secondary-btn {
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  padding: 13px 26px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.customer-hero__secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: #35a7ff !important;
+}
+
+/* ==============================
+   TABLET RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .customer-hero {
+    min-height: 600px;
+  }
+
+  .customer-hero__container {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+
+  .customer-hero__content {
+    max-width: 620px;
+  }
+
+  .customer-hero__title {
+    font-size: 48px !important;
+  }
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+  .customer-hero {
+    min-height: 580px;
+    border-radius: 12px;
+  }
+
+  .customer-hero__container {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+
+  .customer-hero__content {
+    padding: 70px 0;
+  }
+
+  .customer-hero__eyebrow {
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+  }
+
+  .customer-hero__title {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+  }
+
+  .customer-hero__description {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+  .customer-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .customer-hero__primary-btn,
+  .customer-hero__secondary-btn {
+    width: 100%;
+    padding: 12px 18px !important;
+  }
+
+  .customer-hero__overlay {
+    background: rgba(7, 27, 51, 0.78);
+  }
+}
+
+/* ==============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 380px) {
+  .customer-hero {
+    min-height: 550px;
+  }
+
+  .customer-hero__title {
+    font-size: 31px !important;
+  }
+}
